@@ -66,7 +66,7 @@ const createPost = (post) => {
                     target="_blank"
                     class="post__avatar"
                   >
-                    <img src="${image}" alt="User Picture" />
+                    <img src="${post.userImage}" alt="User Picture" />
                   </a>
                   <a href="#" class="post__user">phero</a>
                 </div>
@@ -160,7 +160,7 @@ const displayLikedPosts = () => {
 
 const displayReportedPosts = () => {
   const reportedPosts = getReportedPosts();
-  posts.forEach((post) => {
+  reportedPosts.forEach((post) => {
     const div = createPost(post);
     document.getElementById("reported").appendChild(div);
   });
