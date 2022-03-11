@@ -77,6 +77,30 @@
                 <h1>Reported posts</h1>
             </div>
         </main>
+        <section>
+            <h2 class="text-center py-4">How does JavaScript work?</h2>
+            <p class="px-4">
+                JavaScript(known as ECMA-Script) is a single-threaded, non-blocking and an interpreted programing language.
+                Basically, javascript runs through its engine called v8 engine that needs to support web browser to 
+                execute javascript code. There are few steps to execute javascript code. First of all, we know that
+                javascript is a dynamic language. So, when javascript source code comes to the browser the engine Parse
+                the code into a various kinds of Abstract Syntax Tree. Then v8 engine starts to convert these
+                syntax by its just in time (jit) compiler and optimize it into the machine code which is the only language
+                that machine can understand. And in the last the machine code or the byte code send it to the system for
+                execution.
+            </p>
+            <h2 class="text-center py-4">What are the differences between Local Storage and Session Storage?</h2>
+            <p class="px-4">
+                Local storage and session storage are both a sort of browser storage where cookies and some other data keep storage here.
+                Though the both storages are almost similar to storage data in Application on browser devtool, there are
+                some differences between this two. When we assign data in session storage the data expire here and get clear
+                after the page session ends. But in the local storage data do not expire even if the browser tab closed.
+                If we need to delete data from local storage we have to clear data manually from browser cache.
+                But in session storage we don't need to delete it, just need to close the window or that browser tab. Moreover,
+                we can run same operation in both storage but for the consideration of expirity we generally use local storage for our
+                convenience.
+            </p>
+        </section>
         <footer></footer>
 
         <!-- add javascript  file  -->
